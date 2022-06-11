@@ -1,0 +1,105 @@
+$trackHeight:10px;
+
+$handleWidth: 40px;
+$handleHeight: 20px;
+
+$handleMarginTop: -5px;
+$handleTextTop: 20px;
+
+$trackBorder: 0px solid #010101;
+$handleBorder: 1px solid grey !important;
+
+$trackBorderRadius: 2px;
+$handleBorderRadius: 2px;
+
+$trackColor:rgb(50, 50, 50);
+$handleColor:rgb(70, 70, 70);
+
+$handleTextFamily: sans-serif;
+$handleTextColor: rgb(207, 207, 207);
+$handleFontSize: 100%;
+
+$transitionDuration: .5s;
+
+$transformRotate: 0deg;
+
+.sliderContainer {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    transform: rotate($transformRotate);
+
+    .sliderHandle {
+        position: relative;
+        display: block;
+        width: $handleWidth;
+        text-align: center;
+        top: $handleTextTop;
+        pointer-events: none;
+        font-family: $handleTextFamily;
+        line-height: $handleHeight;
+        color: $handleTextColor;
+        font-size: $handleFontSize;
+        transform: rotate(-$transformRotate);
+        padding-left: 2px;
+    }
+
+    .sliderElement {
+        width: 100%;
+        background: inherit;
+        -webkit-appearance: none;
+        &:focus {
+            outline: none;
+        }
+        /* Slider Track */
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: $trackHeight;
+            cursor: pointer;
+            box-shadow: none;
+            background: $trackColor;
+            border-radius: $trackBorderRadius;
+            border: $trackBorder;
+        }
+        &::-moz-range-track {
+            width: 100%;
+            height: $trackHeight;
+            cursor: pointer;
+            box-shadow: none;
+            background: $trackColor;
+            border-radius: $trackBorderRadius;
+            border: $trackBorder;
+        }
+    
+        /* Slider Handle */
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background: $handleColor;
+            border: $handleBorder;
+            border-radius: $handleBorderRadius;
+            height: $handleHeight;
+            width: $handleWidth;
+            cursor: pointer;
+            margin-top: $handleMarginTop;
+            transition: $transitionDuration;
+        }
+        &::-moz-range-thumb {
+            -webkit-appearance: none;
+            background: $handleColor;
+            border: $handleBorder;
+            border-radius: $handleBorderRadius;
+            height: $handleHeight;
+            width: $handleWidth;
+            cursor: pointer;
+            margin-top: $handleMarginTop;
+            transition: $transitionDuration;
+        }
+    
+    
+        &::-moz-focus-outer {
+            border: 0;
+        }
+    }
+}
+
+
+

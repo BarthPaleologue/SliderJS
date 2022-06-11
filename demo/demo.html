@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SliderJS demo</title>
+    <link rel="stylesheet" href="../dist/styles/style2.min.css">
+    <script defer type="module" src="./script.js"></script>
+    <style>
+        html {
+            background: rgb(99, 124, 82);
+        }
+
+        img {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container div {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./logo.png" alt="logo" />
+    <div id="sliderContainer1"></div>
+    <div class="container">
+        <div class="container">
+            <div id="sliderContainer21"></div>
+            <div id="sliderContainer22"></div>
+            <div id="sliderContainer23"></div>
+        </div>
+        <div id="sliderContainer3"></div>
+    </div>
+    <div class="container">
+        <div id="sliderContainer4"></div>
+        <div id="sliderContainer5"></div>
+        <div class="container">
+            <div id="sliderContainer61"></div>
+            <div id="sliderContainer62"></div>
+        </div>
+        <div id="sliderContainer7"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+    "name": "handle-sliderjs",
+    "version": "1.3.0",
+    "description": "A package for creating customzable sliders with handles displaying the slider value.",
+    "author": {
+        "name": "Barthelemy Paleologue",
+        "email": "barth@paleologue.fr"
+    },
+    "main": "./dist/slider.js",
+    "files": [
+        "dist/*"
+    ],
+    "license": "LGPL-3.0",
+    "keywords": [
+        "slider",
+        "handle",
+        "value"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BarthPaleologue/SliderJS",
+        "private": false
+    },
+    "scripts": {
+        "build": "npm run build-tsc && npm run build-sass",
+        "build-tsc": "tsc",
+        "build-sass": "node-sass --output-style compressed src/scss/ --output dist/css/",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "lint": "tslint -p tsconfig.json"
+    },
+    "devDependencies": {
+        "node-sass": "^7.0.1",
+        "prettier": "^2.6.2",
+        "tslint": "^6.1.3",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^4.6.3"
+    }
+}
