@@ -2,7 +2,7 @@
 
 [![pages-build-deployment](https://github.com/BarthPaleologue/SliderJS/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BarthPaleologue/SliderJS/actions/workflows/pages/pages-build-deployment)
 [![CodeQL](https://github.com/BarthPaleologue/SliderJS/actions/workflows/codeql.yml/badge.svg)](https://github.com/BarthPaleologue/SliderJS/actions/workflows/codeql.yml)
-[![License](https://img.shields.io/github/license/BarthPaleologue/SliderJS)](./LICENSE)
+[![License](https://img.shields.io/github/license/BarthPaleologue/SliderJS)](./LICENSE.md)
  
 So you like sliders ? Congratulations you are at the right place ! Create simple and responsive range sliders with ease thanks to SliderJS :
 
